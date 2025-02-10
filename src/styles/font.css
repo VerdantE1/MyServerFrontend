@@ -1,0 +1,17 @@
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+
+/* HightlightH1_black */
+.Highlight_h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;  /* 将文本转换为大写字母 */
+    letter-spacing: 0.1em; /* 字母间距设置为 0.1 个字母的宽度，增加字母之间的距离 */
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* ！！【高级项】设置文本阴影，偏移量为横向 0 像素，纵向 4 像素，模糊半径为 6 像素，颜色为黑色且透明度为 30% */
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+}
+
