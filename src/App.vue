@@ -1,8 +1,7 @@
 <script setup>
   import Navbar from './components/Navbar.vue'
   import useMouseEffect from "@/hooks/useMouseEffect.js";
-  import '@/styles/animations.css'
-  import '@/styles/mouse.css'
+
 
   const {mouseX,mouseY,trails,explosions} = useMouseEffect()  // 此时已经可以在内存中索引mouseX,mouseY了
 </script>
