@@ -1,14 +1,21 @@
-
-
 /* 动画定义 */
 @keyframes fadeOut {
     0% {
         opacity: 1;
-        transform: translate(-50%, -50%) scale(1);
+        transform: translateX(0);
     }
     100% {
         opacity: 0;
-        transform: translate(-50%, -50%) scale(0.5);
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 100%;
     }
 }
 
@@ -31,3 +38,15 @@
         opacity: 0.8;
     }
 }
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%); /* 从左侧进入 */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* 到达原位 */
+    }
+}
+

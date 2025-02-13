@@ -3,6 +3,10 @@
   import useMouseEffect from "@/hooks/useMouseEffect.js";
 
 
+  import '@/styles/animations.css'
+  import '@/styles/mouse.css'
+  import MusicPlayer from "@/components/MusicPlayer.vue";
+
   const {mouseX,mouseY,trails,explosions} = useMouseEffect()  // 此时已经可以在内存中索引mouseX,mouseY了
 </script>
 
@@ -10,7 +14,10 @@
   <div class="app">
     <h1>Hello World!</h1>
     <Navbar/>
+    <MusicPlayer/>
   </div>
+
+
 
 
 
@@ -60,8 +67,9 @@
     border-radius:10px;
     padding: 20px;
     width: 100%;
-    cursor:none
+
   }
+
 
 
 </style>
