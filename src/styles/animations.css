@@ -39,14 +39,10 @@
     }
 }
 
-@keyframes slideIn {
-    0% {
-        opacity: 0;
-        transform: translateX(-100%); /* 从左侧进入 */
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0); /* 到达原位 */
-    }
+/*左右移动*/
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 

@@ -6,7 +6,7 @@
 
 
 <template>
-    <div class="inline-flex bg-white p-2 rounded-full shadow-md items-center">
+    <div class="inline-flex bg-white p-2 rounded-full shadow-md items-center h-[3rem]">
       <button
         @click="togglePlayer"
         class="w-10 h-10 flex items-center justify-center  text-white rounded-full focus:outline-none
@@ -17,10 +17,10 @@
       <span class="font-bold font-palatino ml-5 transition-all duration-1000 bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text text-transparent "
       :style="{width:songName.length + 'ch'}">{{ songName }}</span>
     </div>
-<!--    <div class="inline-flex bg-white w-[10rem] h-[10rem] hover:size-[20rem]-->
-<!--                duration-1000">-->
-<!--      asd-->
-<!--      </div>-->
+
+
+
+
 
 </template>
 

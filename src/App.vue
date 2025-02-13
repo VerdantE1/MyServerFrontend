@@ -11,23 +11,8 @@
 </script>
 
 <template>
-  <div class="app">
-    <h1>Hello World!</h1>
-    <Navbar/>
-    <MusicPlayer/>
-  </div>
 
 
-
-
-
-  <!-- Mouse -->
-  <div
-      class="custom-cursor"
-      :style="{ left: mouseX + 'px', top: mouseY + 'px' }"
-  >
-
-  </div>
 
   <!-- 残影 -->
   <div
@@ -44,13 +29,25 @@
       class="explosion"
       :style="{ left: explosion.x + 'px', top: explosion.y + 'px' }"
   ></div>
-
-
-  <div class="app">
-    <h1>鼠标位置</h1>
-    <p>X:{{mouseX}}</p>
-    <p>Y:{{mouseY}}</p>
+  <!-- Mouse -->
+  <div
+      class="custom-cursor"
+      :style="{ left: mouseX + 'px', top: mouseY + 'px' }"
+  >
   </div>
+
+
+
+
+
+
+
+  <MusicPlayer/>
+
+
+
+
+
 
 
 
